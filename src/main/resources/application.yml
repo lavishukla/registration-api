@@ -1,0 +1,31 @@
+spring:
+  mail:
+    host: smtp.gmail.com
+    password: LaviShukla@23
+    port: 587
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+    username: lavyshukla@gmail.com
+    
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: system
+    password: manager
+    
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+      
+server:
+  port: 9090
+  
+reg-app:
+  messages:
+    regMailSubject: User Registration Success
+    regMailBodyTemplateFile: UNCLOCK-ACC-EMAIL-BODY-TEMPLATE.txt
